@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #000;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+
+.hero-container {
+  background-image: url(images/cover-image.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-container h1 {
+  font-size: 75px;
+  margin-bottom: 10px;
+}
+
+.hero-container p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hero-container button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.hero-container button:hover {
+  background-color: #000;
+}
+
+/* History Section */
+
+.history-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.history-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Gallery Section */
+
+#gallery {
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 97%; 
+}
+
+#gallery h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#gallery p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container {
+  margin: 20px;
+  width: calc(25% - 20px);
+}
+
+.image-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.image-container .image-content {
+  background-color: #f7f7f7;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-container .image-content h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.image-container .image-content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Lightbox Styles */
+
+#lightbox-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+}
+
+#lightbox-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+#lightbox-content {
+  padding: 20px;
+}
+
+#lightbox-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#lightbox-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#lightbox-back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fff;
+  color: #333333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#lightbox-back-button:hover {
+  background-color: #000;
+}
+
+/* Footer */
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
